@@ -1,43 +1,73 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Les Histoires Précieuses — portfolio de créations visuelles et souvenirs personnalisés.">
-<title>Les Histoires Précieuses — Portfolio</title>
-<style>
-:root{--ink:#322343;--pink:#ffdcf0;--violet:#6b4ba1;--yellow:#ffe7a0;--blue:#dceeff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:#fffafc}
-header{background:linear-gradient(120deg,var(--pink),var(--yellow),var(--blue));padding:20px 5%;text-align:center}
-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:16px}nav a{color:var(--ink);font-weight:700;text-decoration:none}
-.hero{padding:75px 20px;text-align:center;max-width:850px;margin:auto}h1{font-size:clamp(2.3rem,7vw,4.4rem);line-height:1.1;margin:0 0 20px}h2{text-align:center;font-size:2rem}
-.tag{display:inline-block;background:#fff;padding:6px 16px;border-radius:30px;font-size:.85rem}
-.btn{display:inline-block;background:var(--violet);color:#fff;padding:12px 22px;border-radius:50px;text-decoration:none;font-weight:700}
-section{padding:45px 6%}.wrap{max-width:1050px;margin:auto}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
-.card{padding:25px;background:white;border-radius:20px;box-shadow:0 9px 30px #422e5814}.card:nth-child(2){background:#fff9e7}.card:nth-child(3){background:#f1f6ff}
-.price{font-size:2rem;font-weight:800;color:var(--violet)}.muted{color:#675e70}.center{text-align:center}
-.book{margin:25px auto;width:min(340px,85vw);height:215px;perspective:900px;cursor:pointer}
-.book-inner{position:relative;height:100%;transform-style:preserve-3d;transition:transform 1s;box-shadow:0 12px 35px #4a32602c;border-radius:12px}
-.book.open .book-inner{transform:rotateY(-25deg)}.cover{position:absolute;inset:0;display:grid;place-content:center;background:linear-gradient(135deg,#a87bcc,#ffb7dc);color:white;border:8px double #fff8;border-radius:12px;text-align:center;padding:20px;font-size:1.5rem}
-.memories{display:flex;overflow:hidden;max-width:600px;margin:auto;border-radius:22px}.memory{flex:0 0 100%;padding:45px 20px;background:linear-gradient(135deg,#f6e5ff,#fff0d2);text-align:center;font-size:1.25rem;animation:slide 15s infinite}
-@keyframes slide{0%,26%{transform:translateX(0)}33%,59%{transform:translateX(-100%)}66%,92%{transform:translateX(-200%)}100%{transform:translateX(0)}}
-.notice{border-left:4px solid var(--violet);padding:12px 16px;background:#f8f3ff;border-radius:8px}
-footer{text-align:center;padding:28px;background:#352346;color:#fff}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
-</style>
-</head>
-<body>
-<header><nav aria-label="Navigation principale"><a href="#accueil">Accueil</a><a href="#creations">Créations</a><a href="#offres">Prestations</a><a href="#avis">Avis</a><a href="#contact">Contact</a></nav></header>
-<main>
-<section class="hero" id="accueil"><span class="tag">Portfolio de démonstration</span><h1>Les Histoires Précieuses</h1><p>Des souvenirs, des images et des histoires à transmettre avec tendresse.</p><a class="btn" href="#creations">Découvrir l'univers</a></section>
-<section id="creations"><div class="wrap"><h2>Un album qui prend vie</h2><p class="center">Touchez l'album pour l'ouvrir.</p><div class="book" id="book" role="button" tabindex="0" aria-label="Ouvrir l'album" aria-pressed="false"><div class="book-inner"><div class="cover">✦<br>Vos instants précieux<br>♡</div></div></div><h2>Quelques inspirations</h2><div class="grid"><div class="card">📖 <strong>Albums de souvenirs</strong><p>Des récits mis en page avec délicatesse.</p></div><div class="card">🎞️ <strong>Montages visuels</strong><p>Des images et des émotions réunies.</p></div><div class="card">💌 <strong>Messages à transmettre</strong><p>Des mots qui restent et se partagent.</p></div></div></div></section>
-<section style="background:#fff2f9"><div class="wrap"><h2>Souvenirs en mouvement</h2><div class="memories" aria-label="Exemples d'inspirations"><div class="memory">🌸 Les moments partagés</div><div class="memory">✨ Les belles histoires</div><div class="memory">💜 Les souvenirs à garder</div></div></div></section>
-<section id="offres"><div class="wrap"><h2>Prestations présentées</h2><p class="center muted">Tarifs indicatifs de la maquette, à confirmer avant toute publication commerciale.</p><div class="grid"><div class="card"><h3>Essentiel</h3><div class="price">135 €</div><p>Présentation visuelle d'un souvenir.</p></div><div class="card"><h3>Signature</h3><div class="price">195 €</div><p>Création enrichie et mise en scène personnalisée.</p></div><div class="card"><h3>Collection</h3><div class="price">350 €</div><p>Projet narratif et visuel plus complet.</p></div></div></div></section>
-<section id="avis" style="background:#f5f0ff"><div class="wrap"><h2>Avis et témoignages</h2><div class="notice"><strong>Vos futurs témoignages ici.</strong><p>Cette section accueillera uniquement des avis authentiques, publiés avec l'accord de leurs auteurs. Aucun témoignage client n'est affiché pour le moment.</p></div></div></section>
-<section id="contact"><div class="wrap center"><h2>Contact</h2><p>Pour toute question sur les créations présentées dans ce portfolio :</p><p><a class="btn" href="mailto:easytransfert@financier.com?subject=Contact%20-%20Les%20Histoires%20Pr%C3%A9cieuses">✉️ Nous contacter par e-mail</a></p><p><a href="mailto:easytransfert@financier.com">easytransfert@financier.com</a></p><p class="muted">Ce bouton ouvre votre application de messagerie. Aucun formulaire ni paiement n’est activé sur ce site.</p></div></section>
-</main><footer>© 2026 Les Histoires Précieuses — Portfolio de démonstration</footer>
-<script>
-const b=document.getElementById('book');
-function toggleBook(){const opened=b.classList.toggle('open');b.setAttribute('aria-pressed',String(opened));}
-b.addEventListener('click',toggleBook);b.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleBook();}});
-</script>
-</body></html>
+✦ Les Histoires Précieuses
+Accueil
+Créations
+Prestations
+Comment ça marche
+Contact
+Des souvenirs uniques, créés pour vous
+Les Histoires Précieuses
+Transformez vos photos, vos mots et vos plus beaux moments en une histoire personnelle à transmettre et à chérir.
+Découvrir nos prestations
+Un album qui prend vie
+Une façon douce et originale de raconter les moments qui comptent. Touchez l’album pour découvrir son animation.
+Vos souvenirs méritent une belle histoire ✨
+Appuyez pour ouvrir l’album
+Illustration de démonstration : chaque projet est personnalisé selon vos contenus.
+Choisissez votre formule
+Trois propositions pour célébrer un souvenir, offrir une attention particulière ou créer un récit plus complet. Les éléments ci-dessous sont des propositions de contenu à confirmer avant toute commande.
+L’essentiel
+Éclat de souvenir
+135 €
+Pour mettre en valeur un moment important dans une création délicate et personnalisée.
+	•	Échange pour définir votre projet
+	•	Sélection de vos photos et textes
+	•	Mise en page d’un album souvenir numérique court
+	•	Une série de retouches après présentation
+	•	Livraison du fichier numérique final
+Demander cette formule
+La plus complète pour un cadeau
+Histoire à partager
+195 €
+Pour raconter plusieurs instants et créer un cadeau chargé d’émotion.
+	•	Échange approfondi sur votre histoire
+	•	Organisation de vos photos et messages
+	•	Album numérique personnalisé plus développé
+	•	Textes d’accompagnement et transitions soignées
+	•	Deux séries de retouches
+	•	Livraison du fichier numérique final
+Demander cette formule
+Signature
+Héritage précieux
+350 €
+Pour un projet narratif plus ambitieux, à partager avec ceux qui vous sont chers.
+	•	Entretien de préparation personnalisé
+	•	Conception du fil narratif de votre histoire
+	•	Album numérique premium et mise en page élaborée
+	•	Intégration de souvenirs et messages personnels
+	•	Trois séries de retouches
+	•	Livraison numérique et version adaptée au partage
+Demander cette formule
+Les contenus exacts, le nombre de pages, les délais, les éventuels frais supplémentaires et les modalités de règlement sont précisés dans un devis avant validation. Aucun paiement n’est effectué directement sur ce site.
+Comment se déroule votre création ?
+Un accompagnement simple, de la première idée au souvenir final.
+01
+Vous nous écrivez
+Expliquez l’occasion, votre idée et la formule envisagée.
+02
+Nous préparons
+Nous échangeons sur les photos, textes, préférences et le calendrier.
+03
+Vous validez
+Vous recevez une proposition et pouvez demander les retouches prévues.
+04
+Vous partagez
+Votre création finale vous est remise au format numérique convenu.
+Des histoires pour chaque occasion
+Des idées de projets à imaginer ensemble, selon vos envies.
+Anniversaires et célébrations 🎂Histoires de famille 💛Messages et cadeaux d’amour 💌
+Parlons de votre histoire
+Vous avez une idée, une question sur une formule ou besoin d’un devis ? Écrivez-nous en précisant l’occasion et la date souhaitée.
+easytransfert@financier.com
+✉️ Nous contacter par e-mail
+Ce bouton ouvre votre application de messagerie. Aucun formulaire ni paiement en ligne n’est activé.
+© Les Histoires Précieuses · Contact
